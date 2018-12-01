@@ -63,11 +63,11 @@ bool playGame(int guesses, int number)
         cin >> i_guess;
 
         if (i_guess > number)
-			std::cout << "Your guess is too high.\n";
-		else if (i_guess < number)
-			std::cout << "Your guess is too low.\n";
-		else /// guess == number
-            return true;
+		std::cout << "Your guess is too high.\n";
+	else if (i_guess < number)
+		std::cout << "Your guess is too low.\n";
+	else /// guess == number
+        	return true;
     }
 
     return false;
